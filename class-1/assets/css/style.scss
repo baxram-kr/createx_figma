@@ -1,0 +1,586 @@
+@import './verabile';
+$mainColor:#FF3F3A;
+@import './globle';
+
+// *{  
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     text-decoration: none;
+//     list-style: none;
+//     font-family: 'Lato', sans-serif;
+// }
+.container{
+    @media (max-width:1038px) {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
+.show{
+    background-image: url(../media/background.png);
+    .nav{
+        width: 90%;
+        margin: 0 auto;
+        .bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            #btn{
+                display: none;
+                background-color: $mainColor;
+                border: none;
+                padding: 5px 10px;
+                color: white;
+                border-radius: 5px;
+                &:hover{background-color: black;}
+                @media (max-width:1038px) {display: block;}
+
+
+            }
+            #menu{
+              
+                display: flex;
+                li a{
+                    padding: 5px 10px;
+                    color: black;
+                    @media (max-width:1038px){color: white;}
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+
+
+                @media (max-width:1038px) {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: black;
+                    padding: 15px;
+                    width: 60%;
+                    display: none;}
+            }
+            .reg{
+           
+                a{
+                    color: black;
+                &:hover{opacity: 0.5;}
+
+                }
+                .first {
+                    background-color: $mainColor;
+                    color: white;
+                    padding: 5px 10px;
+                    margin: 0 10px;
+                    border-radius: 5px;
+                    
+                   
+                }
+
+                @media (max-width:1038px) {display: none;}
+            }
+        }
+    }
+}
+
+header{
+    text-align: center;
+    padding: 100px 0;
+    h1{
+        @media (max-width:1038px) {font-size: 1.8rem;
+            width: 80%;
+        }
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+.card-1{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    @media (max-width:1038px) {
+            flex-wrap: wrap;
+    }
+    .photo{
+        @media (max-width:1038px) {
+            width: 100%;
+        }
+        width: 45%;
+        padding: 15px;
+        h5{
+            margin-bottom: 10px;
+        }
+        h1{
+            margin: 10px 0;
+        }
+        p{
+            color: #424551;
+            margin: 10px 0;
+        }
+        ul{
+            margin: 30px 0;
+            li{
+                padding: 5px 0;
+            }
+        }
+        .icons{
+        ul {
+            display: flex;
+            margin-top: 25px;
+           li a{
+                padding: 5px 10px;
+                margin: 5px;
+                color: #424551;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+        .l-box{
+            @media (max-width:1038px) {
+                width: 100%;
+            }
+            width: 450px;
+            // border: 2px solid red;
+            box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+            padding: 20px;
+            .parts{
+                margin: 15px 0;
+                h2{
+                    color: $mainColor;
+                }
+            }
+            #join{
+                width: 100%;
+                border: none;
+                padding: 10px;
+                background-color: $mainColor;
+                color: white;
+                border-radius: 5px;
+                &:hover{background-color: black;}
+            }
+        }
+    }
+    .text{
+        @media (max-width:1038px) {
+            width: 100%;
+        }
+        padding: 15px;
+        width: 45%;
+        .suwret{
+            width: 350px;
+            @media (max-width:1038px) {
+                width: 200px;
+            }
+            margin: 0 auto;
+            background-color: #FFCF2D;
+            img{
+                width: 100%;
+            }
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+        p{
+            color: #424551;
+        }
+        h2{
+            margin: 20px 0;
+        }
+        ul li{
+            i{
+                color: $mainColor ;
+                margin-right: 5px;
+            }
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+}
+
+.center{
+    padding: 20px;
+    width: 90%;
+    margin:  0 auto;
+    .jaziw{
+        text-align: center;
+        margin-bottom: 60px;
+       
+    }
+    .quti{
+       display: flex;
+       justify-content: space-between;
+       
+       @media (max-width:1038px) {
+        flex-wrap: wrap;
+        text-align: center;
+}
+       .kish{
+        width: 18%;
+
+        p{
+           color: #424551;
+           margin-bottom: 30px;
+           margin-top: 20px;
+        }
+        h1{
+            color: rgba(215, 218, 221, 1);
+            padding: 15px;
+            display: inline;       
+        &:hover{
+            background-color: $mainColor;
+            border-radius: 40px;
+}
+        }
+        h2{
+            margin-top: 30px;
+        }
+        @media (max-width:1038px) {
+            width: 90%;
+            margin: 0 auto;
+    }
+       }
+    }
+}
+.diz{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-image: url(../media/background.png);
+    margin-top: 40px;
+    .basi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:1038px) {
+            flex-wrap: wrap;
+    } 
+    .text h1{
+        @media (max-width:1038px) {
+            font-size: 25px;
+            margin-bottom: 15px;
+    }  
+    }
+        .saat{
+            width: 200px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+             h5 , p{
+            display: inline;
+                                   }
+        }
+    }
+    .input-4{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 15px;
+        @media (max-width:1038px) {
+            flex-wrap: wrap;
+    }
+        .in input{
+            padding: 6px;
+            border: none;
+            width: 240px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .in button{
+            padding: 6px;
+            border: none;
+            background-color: $mainColor;
+            color: white;
+            border-radius: 5px;
+            margin: 15px 0;
+            &:hover{background-color: black;}
+
+            @media (max-width:1038px) {
+            width: 240px;
+            
+        }
+        }
+    }
+
+}
+.act{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 70px;
+    @media (max-width:1038px) {
+       flex-wrap: wrap;
+}
+    .text{
+        width: 45%;
+        ul li{
+            i{
+                color: $mainColor;
+                margin-right: 5px;
+            }
+padding: 10px 0;
+font-size: 18px;
+        }
+        @media (max-width:1038px) {
+            width: 90%;
+            margin: 0 auto;
+    }
+    }
+
+}
+.card-1 .photo .qiyin p{
+    display: none;
+}
+#jee{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 15px 0;
+    @media (max-width:1038px) {
+       width: 100%;
+}
+h4{
+    width: 75%;
+    @media (max-width:600px) {
+        font-size: 15px;
+ }
+
+}
+    button{
+        border: none;
+        padding: 10px;
+        color: $mainColor;
+        // background-color: black;
+        background-color: transparent;
+        &:hover{background-color: black;
+        color: white;
+    border-radius: 7px;}
+        font-size: 15px;
+        width: 23%;
+        @media (max-width:1038px) {
+            font-size: 13px;
+     }
+    }
+}
+
+.iii{
+    background-image: url(../media/Background\ \(1\).png);
+    padding: 30px;
+}
+.iii .set{
+text-align: center;
+
+
+}
+.iii .zat{
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media (max-width:1038px) {
+        width: 100%;
+ }
+    
+    .gg{
+        width: 60px;
+        h4{
+            font-size: 30px;
+            color: $mainColor;
+        }
+    }
+    .dd .sts{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        img{
+            width: 40px;
+        }
+        .tye{
+            width: 170px;
+        }
+  
+
+    }
+}
+
+.input-t1 input{
+padding: 9px;
+border: none;
+width: 80%;
+margin-bottom: 10px;
+
+}
+.input-t1 button{
+background-color: $mainColor;
+padding: 9px;
+border: none;
+width: 80%;
+color: white;
+border-radius: 5px;
+margin: 10px 0;
+&:hover{background-color: black;}
+}
+
+.aqir{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    .last{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 20px;
+
+        @media (max-width:1038px) {
+            flex-wrap: wrap;
+     }
+
+        .bbb{
+        display: flex;
+        width: 45%;
+        @media (max-width:1038px) {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        @media (max-width:530px){
+        flex-wrap: wrap;}
+            
+     }
+        box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+        .ior{
+            width: 50%;
+            @media (max-width:530px){
+             width: 100%;}
+            padding: 10px;
+            p{
+                margin: 20px 0;
+            }
+        }
+            justify-content: space-between;
+            .skir{
+                width: 150px;
+                background-color: #FFCF2D;
+                img{
+                    width: 100%;
+                }
+                @media (max-width:530px){
+                    width: 100%;} 
+            }
+        }
+    }
+}
+
+
+.tro{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin:  0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    @media (max-width:1038px) {
+        flex-wrap: wrap;
+ }
+    button{
+        padding: 10px;
+        border: none;
+        background-color: $mainColor;
+        color: white;
+        border-radius: 5px;
+        margin: 0 auto;
+        &:hover{background-color: black;}
+        @media (max-width:1038px) {
+            margin-top: 20px;
+     }
+       
+    }
+
+
+}
+
+
+
+
+
+footer{
+    background-color: #1E212C;
+    padding: 40px;
+    a{
+       color: #3A68B8;
+    }
+    p{
+        color: white;
+        opacity: 0.6;
+    }
+    .f-box{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+        #st{
+            display: flex;
+            margin-top: 15px;
+            li a{
+                padding: 10px;
+            }
+        }
+        @media (max-width:1038px){flex-wrap: wrap;}
+        .foot{
+            width: 19%;
+@media (max-width:1038px){ width: 100%;
+    margin: 0 auto;
+}
+           p{
+            font-size: 12px;
+           }
+           ul li {
+            padding: 5px 0;
+           }
+           ul li h3{
+            margin-bottom: 10px;
+            color: white;
+           }
+           ul li a{
+            margin: 5px 0;
+            color: white;
+            opacity: 0.6;
+            font-size: 13px;
+            &:hover{
+                opacity: 1;
+            }
+           }
+        }
+    }
+}
+.kel{
+display: flex;
+justify-content: space-between;
+background: rgb(164, 161, 161);
+padding: 10px 70px;
+@media (max-width:1038px){flex-wrap: wrap;}
+p{
+    font-size: 12px;
+}
+a{
+    color: black;
+    font-size: 12px;
+
+}
+}
